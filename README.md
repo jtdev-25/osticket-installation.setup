@@ -32,14 +32,14 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 
 ## 📁 Table of Contents
 
-- [System Requirements](#system-requirements)
-- [Step 1: Update Your Server](#step-1-update-your-server)
-- [Step 2: Install LAMP Stack](#step-2-install-lamp-stack)
-- [Step 3: Create Database and User](#step-3-create-database-and-user)
-- [Step 4: Download & Configure osTicket](#step-4-download--configure-osticket)
-- [Step 5: Configure Apache for osTicket](#step-5-configure-apache-for-osticket)
-- [Step 6: Complete Web Installer](#step-6-complete-web-installer)
-- [Step 7: Post-Installation Setup](#step-7-post-installation-setup)
+- [System Requirements]
+- [Step 1: Update Your Server]
+- [Step 2: Install LAMP Stack]
+- [Step 3: Create Database and User]
+- [Step 4: Download & Configure osTicket]
+- [Step 5: Configure Apache for osTicket]
+- [Step 6: Complete Web Installer]
+- [Step 7: Post-Installation Setup]
 
 ---
 
@@ -53,7 +53,5 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 
 ---
 
-## 🔧 Step 1: Update Your Server
+## 🔹 Step 1: Update Your Server
 
-```bash
-sudo apt update && sudo apt upgrade -y
