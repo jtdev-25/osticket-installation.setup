@@ -1,6 +1,6 @@
-<p align="center">
+<p align="center"><a href="https://osticket.com/">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+</a></p>
 
 # 🎫 osTicket Installation & Setup Guide
 
@@ -32,7 +32,6 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 
 ## 📁 Table of Contents
 
-- [Overview](#overview)
 - [System Requirements](#system-requirements)
 - [Step 1: Update Your Server](#step-1-update-your-server)
 - [Step 2: Install LAMP Stack](#step-2-install-lamp-stack)
@@ -41,16 +40,6 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 - [Step 5: Configure Apache for osTicket](#step-5-configure-apache-for-osticket)
 - [Step 6: Complete Web Installer](#step-6-complete-web-installer)
 - [Step 7: Post-Installation Setup](#step-7-post-installation-setup)
-- [Optional: Email Piping Setup](#optional-email-piping-setup)
-- [Troubleshooting](#troubleshooting)
-- [Screenshots](#screenshots)
-- [References](#references)
-
----
-
-## 📝 Overview
-
-osTicket is a widely-used open source support ticket system. This guide walks through installing it on Ubuntu Linux using Apache, MySQL, and PHP (LAMP). Tested on Ubuntu 20.04 & 22.04.
 
 ---
 
