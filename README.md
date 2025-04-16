@@ -4,7 +4,7 @@
 
 # 🎫 osTicket Installation & Setup Guide
 
-This tutorial is a complete step-by-step guide for installing and configuring the open-source **osTicket** support ticketing system(Azure Microsoft, Apache, MySQL, PHP). Includes database setup, web configuration, user creation, and post-install best practices; osTicket helps businesses and IT teams manage customer support, service requests, or internal IT help desk operations.
+This tutorial is a complete step-by-step guide for installing and configuring the open-source **osTicket** support ticketing system(Linux(Ubuntu.22), Apache, MySQL, PHP). Includes database setup, web configuration, user creation, and post-install best practices; osTicket helps businesses and IT teams manage customer support, service requests, or internal IT help desk operations.
 
   - Key functions include:
      - Centralized Ticket Management🎟️: Converts emails, phone calls, and web form submissions into tickets stored in one dashboard.
@@ -16,7 +16,7 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com/watch?v=7fVeClRrURM)
   <img src="https://media1.tenor.com/m/GekYPcvThhkAAAAC/kanye-graduation.gif">
   
 
