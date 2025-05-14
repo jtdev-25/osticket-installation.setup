@@ -6,7 +6,7 @@
 
 This tutorial is a complete step-by-step guide for installing and configuring the open-source **osTicket** support ticketing system(Linux(Ubuntu.22), Apache, MySQL, PHP). Includes database setup, web configuration, user creation, and post-install best practices; osTicket helps businesses and IT teams manage customer support, service requests, or internal IT help desk operations.
 
-<h2>  <ul>  [Ticketing Systems (osTicket)]:</h2>
+<h2>  <ul>  [Ticketing Systems Project (osTicket)]:</h2>
   <p>
 <ol><h4>i.	DEFINE:</h4> osTicket is an extension app accessed through any browser to install/configure a web server and a database
   
@@ -21,7 +21,8 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 <h4>iii.	Setup process:</h4>
       <ul>
         
-  - Download osTicket zipfile provided: <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD" target="_blank">osTicket file</a>
+  - Download osTicket zipfile provided: <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket file</a>
+    - Side note: To open link in a new tab you can use "CTRL+click" (on Windows and Linux) or "CMD+click" (on MacOS) since github does not support (target="_blank") from html
   - open “control panel” from search bar in VM
   - select/expand ISS, select/expand WWW Services, select CGI
   - reboot the 127.0.0.1 screen in browser
@@ -31,9 +32,9 @@ This tutorial is a complete step-by-step guide for installing and configuring th
   - Following installation download the mySQL, root for user/pass and start using ticketing system
   - Access ISS from home, 2xClick “register new” after opening php manager; browse:/cfolder/PHP/cgi_jargin; reboot(stop and start)
   - extract main osTicketing system into C: wwwindows folder
-  - C: windows ➡️ inetpub > wwwroot > include > ost-config.php(reconfig)
+  - C: windows ➡️ inetpub ➡️ wwwroot ➡️ include ➡️ ost-config.php(reconfig)
   - remove all inheritance; everyone “all access”; sign into osTicket
-  - Install heidiSQL; “new” followed by (user/pass: root) > “open”; select “Unnamed”create 
+  - Install heidiSQL; “new” followed by (user/pass: root) ➡️ “open”; select “Unnamed”create 
       
   </ul>
   
@@ -47,42 +48,43 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 <ol>1.	Configure roles: make different permissions then assign to various people
 <ul>a.	Roles: displays different access-levels and we must create “supreme admin” with access to everything</ul>
 2.	Configure departments/teams: Places select users in different domains with varying accessibility. Groups members from different departments on the same project.
-<ul>a.	Departments: access Agents > Departments +>(add new role) “SysAdmins” w/ all default settings for now
-b.	Teams: Agents > Departments +>(add new team) “Online Banking” w/ all default settings for now
+<ul>a.	Departments: access Agents ➡️ Departments +➡️(add new role) “SysAdmins” w/ all default settings for now
+b.	Teams: Agents ➡️ Departments +➡️(add new team) “Online Banking” w/ all default settings for now
 </ul>
 3.	Adjust settings: Enable settings to allow end users to access ticket creation w/o creds.
-<ul>a.	Path: Settings > Users > “Registration Required”(UNCHECK)</ul>
+<ul>a.	Path: Settings ➡️ Users ➡️ “Registration Required”(UNCHECK)</ul>
 4.	Configure Agents: Create 2 agents and 1 end user or however many you want.
-<ul>a.	Path: [ADMIN PANEL] Agents > Agents +> (add new agent)  
+<ul>a.	Path: [ADMIN PANEL] Agents ➡️ Agents +➡️ (add new agent)  
 b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, uncheck; be mindful of team/permissions</ul>
 5.	Configure End Users: These are the people making tickets
-<ul>a.	Path: [AGENT PANEL] Users +> (add user)</ul>
+<ul>a.	Path: [AGENT PANEL] Users +➡️ (add user)</ul>
 6.	Configure SLAs: Service Level Agreements state that certain tasks should be completed in a certain time frame and withing certain hours of the day. 
-<ul>a.	Path: [ADMIN PANEL] Manage > SLAs +> (add new sla plan) > follow template
-<ul>
+<ul>a.	Path: [ADMIN PANEL] Manage ➡️ SLAs +➡️ (add new sla plan) ➡️ follow template<ul>
 -	Sev-A (Grace Period: 1 hour, Schedule: 24/7)
--	Sev-B (Grace Period: 4 hours, Schedule: 24/7)
--	Sev-C (Grace Period: 8 hours, Business Hours) 
+<br>-	Sev-B (Grace Period: 4 hours, Schedule: 24/7)
+<br>-	Sev-C (Grace Period: 8 hours, Business Hours) 
 </ul>
+  <br>
 </ul>
 7.	Configure Help Topics: Creates a brief explanation of what the topic will cover
-<ul>a.	Path: Manage > Help Topics +> (add new help topic) > follow template
+<ul>a.	Path: Manage ➡️ Help Topics +➡️ (add new help topic) ➡️ follow template
 <ul>
 -	(RAP)Sev-A (Grace Period: 1 hour, Schedule: 24/7)
--	(RAP)Business Critical Outage
--	(RAP)Personal Computer Issues
--	(GI)Equipment Request
--	(RAP)Password Reset
--	(GI)Other
+<br>-	(RAP)Business Critical Outage
+<br>-	(RAP)Personal Computer Issues
+<br>-	(GI)Equipment Request
+<br>-	(RAP)Password Reset
+<br>-	(GI)Other
   </ul>
   </ul>
 8.	Tickets/Ticket Life cycle: This portion of the lab focuses on the running and usage of the osTicketing system at all 3 levels.
-a.	Steps: Make sure the “Sys Admin” = -Top Level D-  DELETE the maintenance department; Tickets auto-sync to this department instead of support  create ticket as Karen, it should be specific to (Report issue/BCO) user error leads to general (Report issue)
-b.	
-c.	 
-d.	 
-e.	 
-f.	
+<ul> a.	Steps: Make sure the “Sys Admin” = "-Top Level D-" ➡️ DELETE the maintenance department; Tickets auto-sync to this department instead of support ➡️ create ticket as Karen, it should be specific to (Report issue/BCO) user error leads to general (Report issue)
+<br>b.	
+<br>c.	 
+<br>d.	 
+<br>e.	 
+<br>f.
+</ul> 
   </ol>
   </ol>
 </ul>
@@ -98,9 +100,14 @@ f.
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-  - In Azure you can create a virtual machine with a windows 10 pro as the image
+  - In Azure you can create a virtual machine with a "windows 10 pro" as the image
+    <img width="400" alt="Screenshot 2025-05-14 at 9 02 16 AM" src="https://github.com/user-attachments/assets/9e038732-09b5-4127-9feb-a83b60b0855a" />
+
 
 - Remote Desktop
+  - In the case you have a macbook in the "Windows App" you can use your new virtual machine via the remote desktop connection after adding a new pc<br>
+    <img width="400" alt="Screenshot 2025-05-14 at 10 43 34 AM" src="https://github.com/user-attachments/assets/eee88207-99a4-4b59-983d-55cbfb7b25b5" />
+
   
 - Internet Information Services (IIS)
   - 3 Phase:
