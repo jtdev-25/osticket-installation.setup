@@ -126,6 +126,3 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
 - osTicket latest release
 
 ---
-
-## 🔹 Step 1: Update Your Server
-
