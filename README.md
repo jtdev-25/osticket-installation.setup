@@ -21,7 +21,9 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 <h4>iii.	Setup process:</h4>
       <ul>
         
-  - Download osTicket zipfile provided: <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket file</a>
+  - Assuming the virtual machine creating process has already been completed proceed:
+    - If not scroll down to "Environments and Technologies Used"
+  - Within your VM download osTicket zipfile provided: <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket file</a>
     - Side note: To open link in a new tab you can use "CTRL+click" (on Windows and Linux) or "CMD+click" (on MacOS) since github does not support (target="_blank") from html
   - open “control panel” from search bar in VM
   - select/expand ISS, select/expand WWW Services, select CGI
@@ -97,11 +99,20 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
   <img src="https://media1.tenor.com/m/GekYPcvThhkAAAAC/kanye-graduation.gif">
   
 
-<h2>Environments and Technologies Used</h2>
+## Environments and Technologies Used
 
 - Microsoft Azure (Virtual Machines/Compute)
   - In Azure you can create a virtual machine with a "windows 10 pro" as the image
     <img width="400" alt="Screenshot 2025-05-14 at 9 02 16 AM" src="https://github.com/user-attachments/assets/9e038732-09b5-4127-9feb-a83b60b0855a" />
+  - VM Creation Steps: In Azure create a resource group:
+    -  Select resource group and and name it anything pertaining to ticketing systems ➡️ leave everything else as default and select "Review + Create"
+    -  Do the same for your VM ➡️ make sure the resuorce group for the vm is the same as the one you just created ➡️ select "windows 10 pro" for image ➡️ create an admin passwrod and user for the vm account ➡️ the virtual net should also align with the resource group you created since the vnets are built automatically
+  - Images pertaining to steps:
+    -  <img width="550" alt="Screenshot 2025-05-14 at 11 04 26 AM" src="https://github.com/user-attachments/assets/f6a56e3c-3b24-4f71-bd90-87d530fc2849" />
+    - <img width="550" alt="Screenshot 2025-05-14 at 11 05 33 AM" src="https://github.com/user-attachments/assets/70f93d15-24c3-42cd-98be-6c9eeaad8146" />
+    - <img width="550" alt="Screenshot 2025-05-14 at 11 07 00 AM" src="https://github.com/user-attachments/assets/46995999-d112-4fd4-855b-406c3dce781b" />
+    - <img width="550" alt="Screenshot 2025-05-14 at 11 09 19 AM" src="https://github.com/user-attachments/assets/2b942a38-2479-47b4-b694-30c2cf63267b" />
+    - <img width="550" alt="Screenshot 2025-05-14 at 11 10 26 AM" src="https://github.com/user-attachments/assets/899168d7-0045-4716-a0a9-2e7b7704b3c1" />
 
 
 - Remote Desktop
@@ -116,6 +127,8 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
     - (OS Ticket Installation)
    
     - ()
+   
+---
 
 ## 🖥️ System Requirements
 
