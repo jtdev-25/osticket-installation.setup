@@ -25,6 +25,8 @@ This tutorial is a complete step-by-step guide for installing and configuring th
     - If not scroll down to "Environments and Technologies Used"
   - Within your VM download osTicket zipfile provided: <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket file</a>
     - Side note: To open link in a new tab you can use "CTRL+click" (on Windows and Linux) or "CMD+click" (on MacOS) since github does not support (target="_blank") from html
+  - Drag the file to the desktop then "extract all" then access the actual file/folder with the content reuired for the following steps.
+  - 
   - open “control panel” from search bar in VM
   - select/expand ISS, select/expand WWW Services, select CGI
   - reboot the 127.0.0.1 screen in browser
