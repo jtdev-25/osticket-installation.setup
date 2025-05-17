@@ -25,19 +25,26 @@ This tutorial is a complete step-by-step guide for installing and configuring th
     - If not scroll down to "Environments and Technologies Used"
   - Within your VM download osTicket zipfile provided: <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket file</a>
     - Side note: To open link in a new tab you can use "CTRL+click" (on Windows and Linux) or "CMD+click" (on MacOS) since github does not support (target="_blank") from html
-  - Drag the file to the desktop then "extract all" then access the actual file/folder with the content reuired for the following steps.
-  - 
-  - open “control panel” from search bar in VM
-  - select/expand ISS, select/expand WWW Services, select CGI
-  - reboot the 127.0.0.1 screen in browser
-  - pretty screen says hello; alter html with Admin notepad
-  - create php file with file explorer and relocate/extract php zipfile from course
+  - Drag the file to the desktop then "extract all" then access the actual file/folder with the content required for the following steps.
+  - From the VM web browser open up a new tab and search "127.0.0.1"
+    - This is the loopback ip address for the computer. When a web server like osTicket is installed it will upload here and become accessible.
+  - Open “control panel” from search bar in VM homescreen ➡️ select "unistall programs" in the programs section ➡️ select "turn windows features on/off"
+  - Select/expand ISS ➡️ select/expand WWW Services ➡️ select CGI and hit "ok" to confirm
+    - Complete in exact chronological order to avoid errors.
+    - <img width="250" height="215" alt="Screenshot 2025-05-14 at 11 03 07 PM" src="https://github.com/user-attachments/assets/36d6a834-6a58-4547-97d9-fd4030b23f8d" />
+      <img width="250" height="215" alt="Screenshot 2025-05-14 at 11 06 48 PM" src="https://github.com/user-attachments/assets/b93ea5bb-99b9-4bd9-be9f-26de0b49dbc8" />
+  - Reboot the 127.0.0.1 screen in browser
+  - Pretty blue screen looks beter than the previous one.
+  - From the previously downloaded osTicket folder select the "PHPManager" file and install: 
+    -  select "yes" and "next" all the way through the installation process to let it run in the background for IIS.
+    -  <img width="250" alt="Screenshot 2025-05-14 at 11 16 46 PM" src="https://github.com/user-attachments/assets/813de0dc-637c-4ec2-b9fe-dde348f83404" />
   - Install VC_redist: transfers data from one location to another; & MySQL: used to store entire database for ENTIRE ticketing system
+    - <img width="250" alt="Screenshot 2025-05-14 at 11 33 23 PM" src="https://github.com/user-attachments/assets/35edf5ee-70e6-4035-824b-50ce9bd2c5df" />
   - Following installation download the mySQL, root for user/pass and start using ticketing system
   - Access ISS from home, 2xClick “register new” after opening php manager; browse:/cfolder/PHP/cgi_jargin; reboot(stop and start)
-  - extract main osTicketing system into C: wwwindows folder
+  - Extract main osTicketing system into C: wwwindows folder
   - C: windows ➡️ inetpub ➡️ wwwroot ➡️ include ➡️ ost-config.php(reconfig)
-  - remove all inheritance; everyone “all access”; sign into osTicket
+  - Remove all inheritance; everyone “all access”; sign into osTicket
   - Install heidiSQL; “new” followed by (user/pass: root) ➡️ “open”; select “Unnamed”create 
       
   </ul>
@@ -110,11 +117,11 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
     -  Select resource group and and name it anything pertaining to ticketing systems ➡️ leave everything else as default and select "Review + Create"
     -  Do the same for your VM ➡️ make sure the resuorce group for the vm is the same as the one you just created ➡️ select "windows 10 pro" for image ➡️ create an admin passwrod and user for the vm account ➡️ the virtual net should also align with the resource group you created since the vnets are built automatically
   - Images pertaining to steps:
-    -  <img width="550" alt="Screenshot 2025-05-14 at 11 04 26 AM" src="https://github.com/user-attachments/assets/f6a56e3c-3b24-4f71-bd90-87d530fc2849" />
-    - <img width="550" alt="Screenshot 2025-05-14 at 11 05 33 AM" src="https://github.com/user-attachments/assets/70f93d15-24c3-42cd-98be-6c9eeaad8146" />
-    - <img width="550" alt="Screenshot 2025-05-14 at 11 07 00 AM" src="https://github.com/user-attachments/assets/46995999-d112-4fd4-855b-406c3dce781b" />
-    - <img width="550" alt="Screenshot 2025-05-14 at 11 09 19 AM" src="https://github.com/user-attachments/assets/2b942a38-2479-47b4-b694-30c2cf63267b" />
-    - <img width="550" alt="Screenshot 2025-05-14 at 11 10 26 AM" src="https://github.com/user-attachments/assets/899168d7-0045-4716-a0a9-2e7b7704b3c1" />
+    -  <img width="450" alt="Screenshot 2025-05-14 at 11 04 26 AM" src="https://github.com/user-attachments/assets/f6a56e3c-3b24-4f71-bd90-87d530fc2849" />
+    - <img width="450" alt="Screenshot 2025-05-14 at 11 05 33 AM" src="https://github.com/user-attachments/assets/70f93d15-24c3-42cd-98be-6c9eeaad8146" />
+    - <img width="450" alt="Screenshot 2025-05-14 at 11 07 00 AM" src="https://github.com/user-attachments/assets/46995999-d112-4fd4-855b-406c3dce781b" />
+    - <img width="450" alt="Screenshot 2025-05-14 at 11 09 19 AM" src="https://github.com/user-attachments/assets/2b942a38-2479-47b4-b694-30c2cf63267b" />
+    - <img width="450" alt="Screenshot 2025-05-14 at 11 10 26 AM" src="https://github.com/user-attachments/assets/899168d7-0045-4716-a0a9-2e7b7704b3c1" />
 
 
 - Remote Desktop
@@ -124,11 +131,17 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
   
 - Internet Information Services (IIS)
   - 3 Phase:
-    - (Primary Assessment)
-      - This is a result of 
-    - (OS Ticket Installation)
+    - (Initial "127.0.0.1" search)
+      - This is a result of searching the loopback ip address for the computer without a webserver being installed.
+      - <img width="365" alt="Screenshot 2025-05-14 at 10 50 59 PM" src="https://github.com/user-attachments/assets/d1b54d7d-fe48-4e59-9e4c-4a71292ee54b" />
+
+    - (Control Panel Modifications)
+      - After making the modifications in the "Programs" section of the control panel this is what the default webserver looks like.
+      - <img width="365" alt="Screenshot 2025-05-14 at 11 10 00 PM" src="https://github.com/user-attachments/assets/c55d9ad6-2ab7-4541-9aaa-733192159ca2" />
    
-    - ()
+    - (OS Ticket Installation)
+      - m
+      - 
    
 ---
 
