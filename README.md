@@ -45,7 +45,7 @@ This tutorial is a complete step-by-step guide for installing and configuring th
   - Extract main osTicketing system into C: wwwindows folder
   - C: windows ➡️ inetpub ➡️ wwwroot ➡️ include ➡️ ost-config.php(reconfig)
   - Remove all inheritance; everyone “all access”; sign into osTicket
-  - Install heidiSQL; “new” followed by (user/pass: root) ➡️ “open”; select “Unnamed”create 
+  - Install heidiSQL; “new” followed by creating new (username/password) ➡️ “open”; select “Unnamed”create 
       
   </ul>
   
@@ -140,8 +140,9 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
       - <img width="365" alt="Screenshot 2025-05-14 at 11 10 00 PM" src="https://github.com/user-attachments/assets/c55d9ad6-2ab7-4541-9aaa-733192159ca2" />
    
     - (OS Ticket Installation)
-      - m
-      - 
+      - Following the installation of all the appropriate files from the osTicket file the server should now look like a regular webpage.
+      - <img width="365" alt="Screenshot 2025-05-18 at 1 06 54 AM" src="https://github.com/user-attachments/assets/04fbd758-ae17-43f4-b360-10be02ddad63" />
+
    
 ---
 
