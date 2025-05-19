@@ -106,14 +106,6 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
   </ul>
   - <img width="350" alt="Screenshot 2025-05-19 at 9 20 23 AM" src="https://github.com/user-attachments/assets/f617d618-e615-4565-b18e-5fe3fdb5d3c2" /> <img width="350" alt="Screenshot 2025-05-19 at 9 21 06 AM" src="https://github.com/user-attachments/assets/29ed96d0-f9d0-4c84-babe-15bdcab897c6" />
   </ul>
-8.	Tickets/Ticket Life cycle: This portion of the lab focuses on the running and usage of the osTicketing system at all 3 levels.
-<ul> a.	Steps: Make sure the “Sys Admin” = "-Top Level D-" ➡️ DELETE the maintenance department; Tickets auto-sync to this department instead of support ➡️ create ticket as Karen, it should be specific to (Report issue/BCO) user error leads to general (Report issue)
-<br>b.	
-<br>c.	 
-<br>d.	 
-<br>e.	 
-<br>f.
-</ul> 
   </ol>
   </ol>
 </ul>
