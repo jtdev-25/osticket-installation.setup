@@ -52,13 +52,12 @@ This tutorial is a complete step-by-step guide for installing and configuring th
     - <img width="300" alt="Screenshot 2025-05-19 at 8 03 47 AM" src="https://github.com/user-attachments/assets/6545afbf-3b84-44e0-a634-5ca60c050712" />
   - Reopen PHP Manager and access "PHP Extensions" to enable the following: "php_imap.dll", "php_intl.dll", "php_opcache.dll"
     - each extension should be right-clicked to enable.
-    - <img width="412" alt="Screenshot 2025-05-19 at 8 11 22 AM" src="https://github.com/user-attachments/assets/82382c7a-fa75-4d5d-9f6e-8386fa2b4346" />
-    <img width="416" alt="Screenshot 2025-05-19 at 8 20 57 AM" src="https://github.com/user-attachments/assets/628cfd2b-41a7-4b11-819a-f1997206a4cb" />
+    - <img width="305" alt="Screenshot 2025-05-19 at 8 11 22 AM" src="https://github.com/user-attachments/assets/82382c7a-fa75-4d5d-9f6e-8386fa2b4346" /> <img width="375" alt="Screenshot 2025-05-19 at 8 20 57 AM" src="https://github.com/user-attachments/assets/628cfd2b-41a7-4b11-819a-f1997206a4cb" />
   - Rename this file following this path. what is in paranthesis indicates what was oriiginally there but changed.
     - C: windows ➡️ inetpub ➡️ wwwroot ➡️ include ➡️ ost-config.php(reconfig)
   - Grant full access in permissions to "everyone" after renaming file.
   - Revisit osTicket webpage and select "continue" to input your information for the creation of your osTicketing system.
-    - <img width="409" alt="Screenshot 2025-05-19 at 8 30 56 AM" src="https://github.com/user-attachments/assets/d037da80-0ce0-4a47-826a-23c9cb3480a7" />
+    - <img width="365" alt="Screenshot 2025-05-19 at 8 30 56 AM" src="https://github.com/user-attachments/assets/d037da80-0ce0-4a47-826a-23c9cb3480a7" />
   - Install heidiSQL; “new” followed by creating new (username/password) ➡️ “open”; select “Unnamed” create new ➡️ "database" ➡️ name = "osTicket"
 
       
@@ -71,6 +70,8 @@ This tutorial is a complete step-by-step guide for installing and configuring th
 <li>3.	End user: This screen contains the least visibility but allows people to create tickets and contact support.</li>
 </ul>
 <h4>v.	Post-install steps:</h4>
+  - CHECKLIST REQUIRED: <a href="https://docs.google.com/document/d/1EemwcNJBrCkZMARXThUriy74IH9ewwZSm-mHf4wvUWg/edit?tab=t.0"> osTicket Setup Checklist </a>
+    - 
 <ol>1.	Configure roles: make different permissions then assign to various people
 <ul>a.	Roles: displays different access-levels and we must create “supreme admin” with access to everything</ul>
 2.	Configure departments/teams: Places select users in different domains with varying accessibility. Groups members from different departments on the same project.
@@ -88,8 +89,9 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
 <ul>a.	Path: [ADMIN PANEL] Manage ➡️ SLAs +➡️ (add new sla plan) ➡️ follow template<ul>
 -	Sev-A (Grace Period: 1 hour, Schedule: 24/7)
 <br>-	Sev-B (Grace Period: 4 hours, Schedule: 24/7)
-<br>-	Sev-C (Grace Period: 8 hours, Business Hours) 
+<br>-	Sev-C (Grace Period: 8 hours, Business Hours)
 </ul>
+      - <img width="350" alt="Screenshot 2025-05-19 at 9 11 36 AM" src="https://github.com/user-attachments/assets/6a10cbbf-fcca-4bec-a179-31d221c8e2af" /> <img width="350" alt="Screenshot 2025-05-19 at 9 12 24 AM" src="https://github.com/user-attachments/assets/df3591cf-7baa-4244-878d-4551e458276f" />
   <br>
 </ul>
 7.	Configure Help Topics: Creates a brief explanation of what the topic will cover
@@ -102,6 +104,7 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
 <br>-	(RAP)Password Reset
 <br>-	(GI)Other
   </ul>
+  - <img width="350" alt="Screenshot 2025-05-19 at 9 20 23 AM" src="https://github.com/user-attachments/assets/f617d618-e615-4565-b18e-5fe3fdb5d3c2" /> <img width="350" alt="Screenshot 2025-05-19 at 9 21 06 AM" src="https://github.com/user-attachments/assets/29ed96d0-f9d0-4c84-babe-15bdcab897c6" />
   </ul>
 8.	Tickets/Ticket Life cycle: This portion of the lab focuses on the running and usage of the osTicketing system at all 3 levels.
 <ul> a.	Steps: Make sure the “Sys Admin” = "-Top Level D-" ➡️ DELETE the maintenance department; Tickets auto-sync to this department instead of support ➡️ create ticket as Karen, it should be specific to (Report issue/BCO) user error leads to general (Report issue)
@@ -142,7 +145,6 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
 - Remote Desktop
   - In the case you have a macbook in the "Windows App" you can use your new virtual machine via the remote desktop connection after adding a new pc<br>
     <img width="400" alt="Screenshot 2025-05-14 at 10 43 34 AM" src="https://github.com/user-attachments/assets/eee88207-99a4-4b59-983d-55cbfb7b25b5" />
-
   
 - Internet Information Services (IIS)
   - 3 Phase:
@@ -157,7 +159,6 @@ b.	Configuration: First/Last name, email, user, “set pass”, uncheck, fill, u
     - (OS Ticket Installation)
       - Following the installation of all the appropriate files from the osTicket file the server should now look like a regular webpage.
       - <img width="365" alt="Screenshot 2025-05-18 at 1 06 54 AM" src="https://github.com/user-attachments/assets/04fbd758-ae17-43f4-b360-10be02ddad63" />
-
    
 ---
 
