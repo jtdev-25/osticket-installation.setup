@@ -23,6 +23,7 @@ This tutorial is a complete step-by-step guide for installing and configuring th
         
   - Assuming the virtual machine creating process has already been completed proceed:
     - If not scroll down to "Environments and Technologies Used"
+  - CHECKLIST REQUIRED: <a href="https://docs.google.com/document/d/1DyjX8LeVU98LjhXO2t2K2F0aHywI2N9GD57T3taO5qo/edit?tab=t.0"> osTicket Installation Checklist </a> 
   - Within your VM download osTicket zipfile provided: <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket file</a>
     - Side note: To open link in a new tab you can use "CTRL+click" (on Windows and Linux) or "CMD+click" (on MacOS) since github does not support (target="_blank") from html
   - Drag the file to the desktop then "extract all" then access the actual file/folder with the content required for the following steps.
@@ -40,12 +41,26 @@ This tutorial is a complete step-by-step guide for installing and configuring th
     -  <img width="250" alt="Screenshot 2025-05-14 at 11 16 46 PM" src="https://github.com/user-attachments/assets/813de0dc-637c-4ec2-b9fe-dde348f83404" />
   - Install VC_redist: transfers data from one location to another; & MySQL: used to store entire database for ENTIRE ticketing system
     - <img width="250" alt="Screenshot 2025-05-14 at 11 33 23 PM" src="https://github.com/user-attachments/assets/35edf5ee-70e6-4035-824b-50ce9bd2c5df" />
-  - Following installation download the mySQL, root for user/pass and start using ticketing system
-  - Access ISS from home, 2xClick “register new” after opening php manager; browse:/cfolder/PHP/cgi_jargin; reboot(stop and start)
-  - Extract main osTicketing system into C: wwwindows folder
-  - C: windows ➡️ inetpub ➡️ wwwroot ➡️ include ➡️ ost-config.php(reconfig)
-  - Remove all inheritance; everyone “all access”; sign into osTicket
-  - Install heidiSQL; “new” followed by creating new (username/password) ➡️ “open”; select “Unnamed”create 
+      - Remove all inheritance; everyone “all access”; sign into osTicket
+  - Create a folder on "C: windows" called "PHP" and allow to store all files pertaining to php manager by unzipping "php-7.3.8-nts-Win32-VC15-x86" file into new PHP folder.
+  - Following installation download the MySQL(make sure it's "Typical" setup), root for user/pass and start using ticketing system
+  - Access ISS from home and "Run as Administrator" ➡️ select PHP Manager ➡️ 2xClick “register new PHP version” ➡️ browse:/cfolder/PHP/cgi_jargin ➡️ reboot(stop and start)
+    - <img width="300" alt="Screenshot 2025-05-19 at 7 53 33 AM" src="https://github.com/user-attachments/assets/9a1d33f9-ac8c-4c4d-b8c3-8f4a942a7f65" />
+  - Extract main osTicketing system into C: wwwindows folder copy the "upload" folder into the proceeding path
+    - Following this rename "upload" ➡️ "osTicket"
+  - Reopen PHP Manager as admin again and reboot ➡️ under "Sites" select "osTicket" ➡️ select "Browse" to access osTicket from defaukt web browser.
+    - <img width="300" alt="Screenshot 2025-05-19 at 8 03 47 AM" src="https://github.com/user-attachments/assets/6545afbf-3b84-44e0-a634-5ca60c050712" />
+  - Reopen PHP Manager and access "PHP Extensions" to enable the following: "php_imap.dll", "php_intl.dll", "php_opcache.dll"
+    - each extension should be right-clicked to enable.
+    - <img width="412" alt="Screenshot 2025-05-19 at 8 11 22 AM" src="https://github.com/user-attachments/assets/82382c7a-fa75-4d5d-9f6e-8386fa2b4346" />
+    <img width="416" alt="Screenshot 2025-05-19 at 8 20 57 AM" src="https://github.com/user-attachments/assets/628cfd2b-41a7-4b11-819a-f1997206a4cb" />
+  - Rename this file following this path. what is in paranthesis indicates what was oriiginally there but changed.
+    - C: windows ➡️ inetpub ➡️ wwwroot ➡️ include ➡️ ost-config.php(reconfig)
+  - Grant full access in permissions to "everyone" after renaming file.
+  - Revisit osTicket webpage and select "continue" to input your information for the creation of your osTicketing system.
+    - <img width="409" alt="Screenshot 2025-05-19 at 8 30 56 AM" src="https://github.com/user-attachments/assets/d037da80-0ce0-4a47-826a-23c9cb3480a7" />
+  - Install heidiSQL; “new” followed by creating new (username/password) ➡️ “open”; select “Unnamed” create new ➡️ "database" ➡️ name = "osTicket"
+
       
   </ul>
   
