@@ -41,7 +41,7 @@ This tutorial is a complete step-by-step guide for installing and configuring th
     -  <img width="250" alt="Screenshot 2025-05-14 at 11 16 46 PM" src="https://github.com/user-attachments/assets/813de0dc-637c-4ec2-b9fe-dde348f83404" />
   - Install VC_redist: transfers data from one location to another; & MySQL: used to store entire database for ENTIRE ticketing system
     - <img width="250" alt="Screenshot 2025-05-14 at 11 33 23 PM" src="https://github.com/user-attachments/assets/35edf5ee-70e6-4035-824b-50ce9bd2c5df" />
-      - Remove all inheritance; everyone “all access”; sign into osTicket
+    - Remove all inheritance; everyone “all access”; sign into osTicket
   - Create a folder on "C: windows" called "PHP" and allow to store all files pertaining to php manager by unzipping "php-7.3.8-nts-Win32-VC15-x86" file into new PHP folder.
   - Following installation download the MySQL(make sure it's "Typical" setup), root for user/pass and start using ticketing system
   - Access ISS from home and "Run as Administrator" ➡️ select PHP Manager ➡️ 2xClick “register new PHP version” ➡️ browse:/cfolder/PHP/cgi_jargin ➡️ reboot(stop and start)
